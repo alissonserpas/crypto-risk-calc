@@ -144,10 +144,18 @@ export default function RiskCalculator() {
             </div>
           </div>
 
-          <div className="flex-grow bg-slate-950 rounded-xl border border-dashed border-slate-800 flex items-center justify-center p-4 min-h-[100px]">
-            <span className="text-slate-700 text-xs font-bold uppercase">Espacio Publicitario</span>
+         <div className="flex-grow bg-blue-900/20 rounded-xl border border-blue-500/30 flex flex-col items-center justify-center p-4 min-h-[100px] text-center transition hover:bg-blue-900/30">
+            <span className="text-blue-400 text-xs font-bold uppercase mb-1">¿Operas sin descuentos?</span>
+            <a 
+              href="https://www.binance.com/es" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-sm font-bold flex items-center gap-2 hover:text-blue-400 transition"
+            >
+              Crear cuenta Pro en Binance 
+              <span className="text-lg">↗</span>
+            </a>
           </div>
-
         </div>
       </div>
     </div>
