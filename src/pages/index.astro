@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RiskCalculator from '../components/features/Calculator/RiskCalculator';
+
+---
+
+<Layout title="Crypto Risk Calculator - Pro Tool">
+	<main className="bg-slate-950 min-h-screen flex items-center justify-center p-4">
+		<RiskCalculator client:load />
+	</main>
+</Layout>
