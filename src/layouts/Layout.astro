@@ -10,24 +10,25 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Calculadora de Riesgo Crypto" />
+		<meta name="description" content="Crypto Risk & Position Size Calculator. Optimize your trades, calculate lot sizes, and manage your capital like a pro." />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
+		
 		<title>{title}</title>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="CoinRisk - Pro Trading Calculator" />
+		<meta property="og:description" content="Calculate your exact position size and risk for Bitcoin, Ethereum, and Altcoins." />
 	</head>
 	<body class="bg-slate-950 text-white min-h-screen flex flex-col font-sans">
-		
 		<Navbar />
-
 		<main class="flex-grow">
 			<slot />
 		</main>
-
 		<Footer />
-		
 	</body>
 </html>
